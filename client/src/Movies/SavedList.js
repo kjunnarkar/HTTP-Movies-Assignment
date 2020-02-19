@@ -4,7 +4,11 @@ export default class SavedList extends Component {
   constructor(props) {
     super(props);
   }
-
+/*
+  handleEdit = id => {
+    this.props.history.push(`/update-movie/${id}`);
+  };
+  */
   render() {
     return (
       <div className="saved-list">
@@ -23,6 +27,7 @@ export default class SavedList extends Component {
         <div className="home-button">
           <Link to="/">Home</Link>
         </div>
+    {/*    <button onClick={this.handleEdit(this.props.match.params.id)}>Edit Movie</button> */}
       </div>
     );
   }

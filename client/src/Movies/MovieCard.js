@@ -1,7 +1,12 @@
 import React from 'react';
 
 const MovieCard = props => {
-  const { title, director, metascore, stars } = props.movie;
+  const { title, director, metascore, stars, history, match } = props.movie;
+  /*
+  const handleEdit = id => {
+    history.push(`/update-movie/${id}`);
+  };
+*/
   return (
     <div className="movie-card">
       <h2>{title}</h2>
@@ -18,6 +23,7 @@ const MovieCard = props => {
           {star}
         </div>
       ))}
+  {/*    <button onClick={handleEdit(match.params.id)}>Edit Movie</button> */}
     </div>
   );
 };
