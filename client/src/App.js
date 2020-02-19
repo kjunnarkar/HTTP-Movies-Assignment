@@ -23,13 +23,12 @@ const App = () => {
         }}
       />
       <Route
-        path='/update-movie/:id' 
+        path='/update-movies/:id' 
         render={props => {
-          return <MovieUpdate {...props} addToSavedList={addToSavedList} savedList={savedList} setSavedList={setSavedList} />;
+          return <MovieUpdate {...props} savedList={savedList} setSavedList={setSavedList} />;
         }}
-
-      />
-
+        />
+      
     </>
   );
 };
